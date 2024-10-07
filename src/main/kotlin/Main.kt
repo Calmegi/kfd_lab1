@@ -133,7 +133,8 @@ class ExchangeTerminal {
     }
 
     fun run() {
-        println("Добро пожаловать в валютный терминал обмена!")
+        val greet: () -> Unit = {print("Добро пожаловать в валютный терминал обмена!")}
+        greet
 
         while (true) {
             println("\nВыберите действие:")
